@@ -1,4 +1,3 @@
-Pixelify
-========
+# Pixelify
 
-Convert images (or portios of it) into a pixelated version
+Convert images (or portions of it) into a pixelated version

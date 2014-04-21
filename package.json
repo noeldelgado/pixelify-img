@@ -1,0 +1,30 @@
+{
+  "name": "Pixelify",
+  "version": "0.1.0",
+  "description": "Convert images inro pixelated versions",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/noeldelgado/Pixelify.git"
+  },
+  "keywords": [
+    "pixel",
+    "canvas",
+    "images"
+  ],
+  "author": "Noel Delgado (pixelia.me@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/noeldelgado/Pixelify/issues"
+  },
+  "homepage": "https://github.com/noeldelgado/Pixelify",
+  "devDependencies": {
+    "grunt": "^0.4.4",
+    "grunt-contrib-watch": "^0.6.1",
+    "load-grunt-tasks": "^0.4.0",
+    "grunt-contrib-uglify": "^0.4.0"
+  }
+}
