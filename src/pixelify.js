@@ -68,11 +68,11 @@
                 this._canvasClean.height= this._canvas.height;
             }
 
-            for (y = 0; y <= this.h; y += this.pixel) {
+            for (y = 0; y <= this.h + hs; y += this.pixel) {
                 yy = y;
                 if (yy >= this.h) yy = this.h - this.pixel + hs;
 
-                for (x = 0; x <= this.w; x += this.pixel) {
+                for (x = 0; x <= this.w + hs; x += this.pixel) {
                     xx = x;
                     if (xx >= this.w) xx = this.w - this.pixel + hs;
 
