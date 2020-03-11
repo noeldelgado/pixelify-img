@@ -1,7 +1,7 @@
 # pixelify-img
 [![npm-badge](https://img.shields.io/npm/v/pixelify-img.svg)](https://www.npmjs.com/package/pixelify-img)
 [![Known Vulnerabilities](https://snyk.io/test/npm/pixelify-img/0.1.1/badge.svg)](https://snyk.io/test/npm/pixelify-img/0.1.1)
-![license-badge](https://img.shields.io/npm/l/gemini-scrollbar.svg)
+![license-badge](https://img.shields.io/npm/l/pixelify-img.svg)
 
 JS library for pixelating DOM images (or a portion of it).
 
