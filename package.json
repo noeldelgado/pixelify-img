@@ -1,8 +1,8 @@
 {
-  "name": "Pixelify",
+  "name": "pixelify-img",
   "version": "0.1.0",
-  "description": "Convert images inro pixelated versions",
-  "main": "Gruntfile.js",
+  "description": "JS library for pixelating DOM images",
+  "main": "src/pixelify.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,10 +12,14 @@
   },
   "keywords": [
     "pixel",
-    "canvas",
-    "images"
+    "pixelated",
+    "img",
+    "image",
+    "images",
+    "raster",
+    "8bit"
   ],
-  "author": "Noel Delgado (pixelia.me@gmail.com)",
+  "author": "Noel Delgado (https://pixelia.me)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/noeldelgado/Pixelify/issues"

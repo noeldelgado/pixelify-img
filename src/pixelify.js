@@ -1,7 +1,11 @@
+/**
+ * pixelify-img - JS library for pixelating images right on the DOM
+ * @version v0.1.0
+ * @link http://noeldelgado.github.io/pixelify-img/
+ * @license MIT
+ */
 (function() {
     "use strict";
-
-    window.Pixelify = Pixelify;
 
     function Pixelify(image, config) {
         if (!image) return
@@ -112,4 +116,8 @@
             window.open(url, "Pixelify", "width=" + w + ",height=" + h + "");
         }
     };
+
+    if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
+        module.exports = Pixelify;
+    } else {window.Pixelify = Pixelify;}
 }());

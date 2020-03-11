@@ -1,40 +1,52 @@
-# Pixelify
+# pixelify-img
 
-Convert images (or portions of it) into a pixelated version.
+JS library for pixelating DOM images (or a portion of it).
 
-It replaces the source of the given image with the altered version using DATA URL format. That mean that any css styles applied to the original image will not being lost.
+It replaces the source of the given image with the modified version using Data URL, so any CSS applied to the original image will be keep, this method is even responsive right of the box.
 
-Since the data is pixelated at runtime, one good option can be to save the pixelated version of the image and use that instead of running the script every time.
+**TIP:** Since the data is pixelated at runtime, saving the pixelated version of the image and using that instead will be a good option.
 
-# Usage
+## Demo
+http://codepen.io/noeldelgado/pen/EGxzu/
+
+## Dependencies
+None
+
+## Installation
+**NPM**
+
+```js
+npm intall pixelify-img --save
 ```
-var image, options;
 
-image = document.querySelector('img.my_image');
-optons = {
-    pixel : 50,
-    alpha : .5
+## Usage
+```js
+const image = document.querySelector('img.my_image');
+const options = {
+	pixel: 50,
+	alpha : .5
 };
 
 new Pixelify(image, options);
 ```
 
-# Parameters (image, options)
-```
-@image <required> [Object] the reference to the image on the DOM
-@options <optional> [Object] the options to be applied to the image
+## API
+### Pixelify(image, options)
+#### @param image
+| value type | default value | description |
+|:--|:--|:--|
+| `HTMLImageElement` | `undefined` *required | Reference to the DOM image |
 
-new Pixelify(image, {
-	/* Default Options */
-	pixel	: 10,
-	x 		: 0,
-	y 		: 0,
-	w 		: image.width,
-	h 		: image.height,
-	alpha : 1,
-	clean : false
-});
-```
+#### @param Object:options
+| value name | value type | default value | description |
+|:--|:--|:--|:--|
+| `pixel` | `Number` | 10 | pixels size |
+| `x` | `Number` | 0 | x-axis pixel of the image effect stating point |
+| `y` | `Number` | 0 | y-axis pixel of the image effect starting point |
+| `w` | `Number` | `image.width` | x-axis pixel of the image effect ending point |
+| `h` | `Number` | `image.height` | y-axis pixel of the image effect starting point |
+| `alpha` | `Number` | 1 | Opacity applied to each pixel |
+| `clean` | `Boolean` | false | Defines if the canvas used to generate the pixelated effect should be cleared. Useful for when the `pixelated` method is called with new options on the same instance. |
 
-# Demo
-[Codepen](http://codepen.io/noeldelgado/pen/EGxzu/)
+## License
+MIT © [Noel Delgado](https://pixelia.me/)
