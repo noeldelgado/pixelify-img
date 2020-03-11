@@ -1,40 +1,55 @@
-# Pixelify
+# pixelify-img
+[![npm-badge](https://img.shields.io/npm/v/pixelify-img.svg)](https://www.npmjs.com/package/pixelify-img)
+[![Known Vulnerabilities](https://snyk.io/test/npm/pixelify-img/0.1.1/badge.svg)](https://snyk.io/test/npm/pixelify-img/0.1.1)
+![license-badge](https://img.shields.io/npm/l/gemini-scrollbar.svg)
 
-Convert images (or portions of it) into a pixelated version.
+JS library for pixelating DOM images (or a portion of it).
 
-It replaces the source of the given image with the altered version using DATA URL format. That mean that any css styles applied to the original image will not being lost.
+It replaces the source of the given image with the modified version using Data URL, so any CSS applied to the original image will be keep, this method is even responsive right of the box.
 
-Since the data is pixelated at runtime, one good option can be to save the pixelated version of the image and use that instead of running the script every time.
+**TIP:** Since the data is pixelated at runtime, saving the pixelated version of the image and using that instead will be a good option.
 
-# Usage
+## Demo
+http://codepen.io/noeldelgado/pen/EGxzu/
+
+## Dependencies
+None
+
+## Installation
+**NPM**
+
+```js
+npm intall pixelify-img --save
 ```
-var image, options;
 
-image = document.querySelector('img.my_image');
-optons = {
-    pixel : 50,
+## Usage
+```js
+const image = document.querySelector('img.my_image');
+const options = {
+    pixel: 50,
     alpha : .5
 };
 
 new Pixelify(image, options);
 ```
 
-# Parameters (image, options)
-```
-@image <required> [Object] the reference to the image on the DOM
-@options <optional> [Object] the options to be applied to the image
+## API
+### Pixelify(image, options)
+#### @param image
+| value type | default value | description |
+|:--|:--|:--|
+| `HTMLImageElement` | `undefined` *required | Reference to the DOM image |
 
-new Pixelify(image, {
-	/* Default Options */
-	pixel	: 10,
-	x 		: 0,
-	y 		: 0,
-	w 		: image.width,
-	h 		: image.height,
-	alpha : 1,
-	clean : false
-});
-```
+#### @param Object:options
+| value name | value type | default value | description |
+|:--|:--|:--|:--|
+| `pixel` | `Number` | 10 | pixels size |
+| `x` | `Number` | 0 | x-axis pixel of the image (in natural size) from which the effect will start |
+| `y` | `Number` | 0 | y-axis pixel of the image (in natural size) from which the effect start |
+| `w` | `Number` | `image.naturalWidth` | width from `x` where the effect will end |
+| `h` | `Number` | `image.naturalHeight` | height from `y` where the effect will end |
+| `alpha` | `Number` | 1 | Opacity applied to each pixel |
+| `clean` | `Boolean` | false | Defines if the canvas should be clear when applying `alpha`. |
 
-# Demo
-[Codepen](http://codepen.io/noeldelgado/pen/EGxzu/)
+## License
+MIT © [Noel Delgado](https://pixelia.me/)
