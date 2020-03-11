@@ -1,9 +1,3 @@
-/**
- * pixelify-img - JS library for pixelating images right on the DOM
- * @version v0.1.0
- * @link http://noeldelgado.github.io/pixelify-img/
- * @license MIT
- */
 (function() {
     "use strict";
 
