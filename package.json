@@ -27,12 +27,5 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/noeldelgado/pixelify-img/issues"
-  },
-  "homepage": "https://github.com/noeldelgado/Pixelify",
-  "devDependencies": {
-    "grunt": "^0.4.4",
-    "grunt-contrib-watch": "^0.6.1",
-    "load-grunt-tasks": "^0.4.0",
-    "grunt-contrib-uglify": "^0.4.0"
   }
 }
