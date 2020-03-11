@@ -11,6 +11,9 @@
     "url": "git://github.com/noeldelgado/pixelify-img.git"
   },
   "homepage": "https://github.com/noeldelgado/pixelify-img",
+  "files": [
+    "src/index.js"
+  ],
   "keywords": [
     "pixel",
     "pixelated",
