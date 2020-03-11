@@ -8,8 +8,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/noeldelgado/Pixelify.git"
+    "url": "git://github.com/noeldelgado/pixelify-img.git"
   },
+  "homepage": "https://github.com/noeldelgado/pixelify-img",
   "keywords": [
     "pixel",
     "pixelated",
@@ -22,7 +23,7 @@
   "author": "Noel Delgado (https://pixelia.me)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/noeldelgado/Pixelify/issues"
+    "url": "https://github.com/noeldelgado/pixelify-img/issues"
   },
   "homepage": "https://github.com/noeldelgado/Pixelify",
   "devDependencies": {
