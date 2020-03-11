@@ -44,19 +44,18 @@
         pixelate : function pixelate(config) {
             var x, y, xx, yy, image_index, r, g, b, a, rgba, data, imageData, hs;
 
-
             hs = ~~(this.pixel / 2) ;
             this.pixel = this.pixel || 10;
             this.x = this.x || 0;
             this.y = this.y || 0;
-            this.w = this.w || this.image.width;
-            this.h = this.h || this.image.height;
+            this.w = this.w || this.image.naturalWidth;
+            this.h = this.h || this.image.naturalHeight;
             this.alpha = this.alpha || 1;
             this.clean = this.clean || false;
 
             this._context       = this._canvas.getContext('2d');
-            this._canvas.width  = this.image.width;
-            this._canvas.height = this.image.height;
+            this._canvas.width  = this.image.naturalWidth;
+            this._canvas.height = this.image.naturalHeight;
 
             // draw image on canvas
             this._context.drawImage(this.image, 0, 0);
