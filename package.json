@@ -1,6 +1,6 @@
 {
   "name": "pixelify-img",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "JS library for pixelating DOM images",
   "main": "src/pixelify.js",
   "scripts": {

@@ -1,9 +1,3 @@
-/**
- * pixelify-img - JS library for pixelating images right on the DOM
- * @version v0.1.0
- * @link http://noeldelgado.github.io/pixelify-img/
- * @license MIT
- */
 (function() {
     "use strict";
 
@@ -42,7 +36,7 @@
         },
 
         pixelate : function pixelate(config) {
-            var x, y, xx, yy, image_index, r, g, b, a, rgba, data, imageData, hs;
+            var x, y, xx, yy, image_index, r, g, b, a, rgba, data, hs;
 
             hs = ~~(this.pixel / 2) ;
             this.pixel = this.pixel || 10;
@@ -90,7 +84,7 @@
 
                     this[this.clean ? '_contextClean' : '_context'].fillStyle = rgba;
                     this[this.clean ? '_contextClean' : '_context']
-                        .fillRect( (this.x + x) - hs, (this.y + y) - hs, this.pixel, this.pixel )
+                        .fillRect( (this.x + x) - hs, (this.y + y) - hs, this.pixel, this.pixel );
                 }
             }
 
