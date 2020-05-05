@@ -2,11 +2,17 @@
 
 ## [Unreleased]
 
+## [0.1.2] - [#2](../../pull/2) 2020-05-05
+### Added
+- lgtm-com badges
+### Fixed
+- lgtm-com alerts
+
 ## [0.1.1] - [#1](../../pull/1) 2020-03-11
-## Changed
+### Changed
 - Filter NPM distributed files [`c3ca472`](https://github.com/noeldelgado/pixelify-img/pull/1/commits/c3ca4728207a6f799ff7c5651133ac54838f8510)
 
-## Fixed
+### Fixed
 - Wrong effect applied for scaled images (responsive) [`33818f3`](https://github.com/noeldelgado/pixelify-img/pull/1/commits/33818f37a8a2918a8078c359b1d026589e7929cc)
   - use the image.natural{Width, Height} instead of image.{width, height} to perform the calculations
 
@@ -17,9 +23,10 @@
   - grunt, grunt-contrib-watch, load-grunt-tasks, grunt-contrib-uglify
 
 ## [0.1.0] - 2020-03-11
-## Added
+### Added
 - Published on NPM
 
-[Unreleased]: https://github.com/noeldelgado/pixelify-img/compare/v0.1.1...HEAD
-[0.1.1]: https://github.com/noeldelgado/pixelify-img/compare/tag/v0.1.1...v0.1.1
+[Unreleased]: https://github.com/noeldelgado/pixelify-img/compare/v0.1.2...HEAD
+[0.1.2]: https://github.com/noeldelgado/pixelify-img/compare/tag/v0.1.1...v0.1.2
+[0.1.1]: https://github.com/noeldelgado/pixelify-img/compare/tag/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/noeldelgado/pixelify-img/releases/tag/v0.1.0
