@@ -3,6 +3,8 @@
 ![license-badge](https://img.shields.io/npm/l/pixelify-img.svg)
 [![Known Vulnerabilities](https://snyk.io/test/npm/pixelify-img/badge.svg)](https://snyk.io/test/npm/pixelify-img)
 [![Dependencies](https://img.shields.io/david/noeldelgado/pixelify-img.svg)](https://david-dm.org/noeldelgado/pixelify-img)
+[![Total alerts](https://img.shields.io/lgtm/alerts/g/noeldelgado/pixelify-img.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/noeldelgado/pixelify-img/alerts/)
+[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/noeldelgado/pixelify-img.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/noeldelgado/pixelify-img/context:javascript)
 
 JS library for pixelating DOM images (or a portion of it).
 
