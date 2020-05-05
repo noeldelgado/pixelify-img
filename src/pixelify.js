@@ -84,7 +84,7 @@
 
                     this[this.clean ? '_contextClean' : '_context'].fillStyle = rgba;
                     this[this.clean ? '_contextClean' : '_context']
-                        .fillRect( (this.x + x) - hs, (this.y + y) - hs, this.pixel, this.pixel )
+                        .fillRect( (this.x + x) - hs, (this.y + y) - hs, this.pixel, this.pixel );
                 }
             }
 
