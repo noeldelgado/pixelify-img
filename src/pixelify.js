@@ -93,11 +93,28 @@
         },
 
         _getDataURL : function _getDataURL() {
-            return this[(this.clean) ? "_canvasClean" : "_canvas"].toDataURL("image/png");
+            var imageType = "image/png";
+            if(this._isWebP()){
+                imageType = "image/webp";
+            }
+            return this[(this.clean) ? "_canvasClean" : "_canvas"].toDataURL(imageType);
+        },
+
+        _isWebP : function () {
+            var currentSrc = this.image.currentSrc;
+            if (currentSrc.substring(currentSrc.length - 4) === 'webp') {
+                return true;
+            } else {
+                return false;
+            }
         },
 
         replace : function replace() {
-            this.image.setAttribute('src', this._getDataURL());
+            if(this._isWebP()){
+                this.image.parentElement.querySelector( 'source[type="image/webp"]' ).setAttribute('srcset', this._getDataURL());
+            }else{
+                this.image.setAttribute('srcset', this._getDataURL());
+            }
             return this;
         },
 
