@@ -113,7 +113,7 @@
             if(this._isWebP()){
                 this.image.parentElement.querySelector( 'source[type="image/webp"]' ).setAttribute('srcset', this._getDataURL());
             }else{
-                this.image.setAttribute('srcset', this._getDataURL());
+                this.image.setAttribute('src', this._getDataURL());
             }
             return this;
         },
